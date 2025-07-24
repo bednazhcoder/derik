@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galerie – Barbershop</title>
+  
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+   <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Derik</div>
+
+      <!-- Theme Toggle -->
+      <button class="theme-toggle" id="themeToggle" aria-label="Farbschema wechseln">🌞</button>
+
+      <!-- Hamburger Menu -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Über Uns</a></li>
+        <li><a href="services.html">Dienstleistungen</a></li>
+        <li><a href="booking.html">Buchung</a></li>
+        <li><a href="gallery.html">Galerie</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div id="nav-overlay" class="nav-overlay"></div>
+
+  </header>
+
+  <main class="gallery-page">
+    <h1>Galerie</h1>
+    <div class="gallery-grid">
+      <img src="images/gallery1.jpg" alt="Haarschnitt 1" />
+      <img src="images/gallery2.jpg" alt="Haarschnitt 2" />
+      <img src="images/gallery3.jpg" alt="Haarschnitt 3" />
+      <img src="images/gallery4.jpg" alt="Haarschnitt 4" />
+      <img src="images/gallery5.jpg" alt="Haarschnitt 5" />
+      <img src="images/gallery6.jpg" alt="Innenansicht Barbershop" />
+    </div>
+  </main>
+
+  <div class="lightbox" id="lightbox">
+    <span class="close" id="closeLightbox">&times;</span>
+    <img src="" alt="Großansicht" id="lightboxImage" />
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Barbershop. Alle Rechte vorbehalten.</p>
+    <div class="socials">
+      <a href="#"><img src="images/instagram.svg" alt="Instagram" /></a>
+      <a href="#"><img src="images/facebook.svg" alt="Facebook" /></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
