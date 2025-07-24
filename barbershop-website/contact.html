@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barbershop Max Mustermann</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Derik</div>
+
+      <!-- Theme Toggle -->
+      <button class="theme-toggle" id="themeToggle" aria-label="Farbschema wechseln">🌞</button>
+
+      <!-- Hamburger Menu -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Über Uns</a></li>
+        <li><a href="services.html">Dienstleistungen</a></li>
+        <li><a href="booking.html">Buchung</a></li>
+        <li><a href="gallery.html">Galerie</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div id="nav-overlay" class="nav-overlay"></div>
+
+  </header>
+
+  <main class="contact-page">
+    <h1>Kontakt</h1>
+
+    <section class="contact-info">
+      <div>
+        <h2>Adresse</h2>
+        <p>Hauptstraße 123<br>12345 Berlin</p>
+      </div>
+      <div>
+        <h2>Telefon</h2>
+        <p><a href="tel:+491234567890">+49 123 4567890</a></p>
+      </div>
+      <div>
+        <h2>E-Mail</h2>
+        <p><a href="mailto:info@barbershop.de">info@barbershop.de</a></p>
+      </div>
+      <div>
+        <h2>Öffnungszeiten</h2>
+        <p>Mo–Fr: 9:00–18:00<br>Sa: 10:00–14:00</p>
+      </div>
+    </section>
+
+    <section class="map-container">
+      <iframe
+        src="https://www.google.com/maps/place/Barber+Shop+Derik/@48.1261341,14.8557262,3110m/data=!3m1!1e3!4m10!1m2!2m1!1sderik!3m6!1s0x477249f977493ac5:0x931ef7f8543f371f!8m2!3d48.1240666!4d14.8799321!15sCgVkZXJpa5IBC2JhcmJlcl9zaG9wqgEtEAEyHhABIhrVWazXFlKSv-3dunOLkC1tl3u_AzEd2DCVdzIJEAIiBWRlcmlr4AEA!16s%2Fg%2F11vqm0c242?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D" 
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </section>
+
+    <section class="contact-form-section">
+      <h2>Schreib uns eine Nachricht</h2>
+      <form id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" required />
+
+        <label for="email">E-Mail</label>
+        <input type="email" id="email" required />
+
+        <label for="message">Nachricht</label>
+        <textarea id="message" rows="5" required></textarea>
+
+        <button type="submit">Absenden</button>
+        <p id="contactConfirmation" class="confirmation-message"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Barbershop. Alle Rechte vorbehalten.</p>
+    <div class="socials">
+      <a href="#"><img src="images/instagram.svg" alt="Instagram" /></a>
+      <a href="#"><img src="images/facebook.svg" alt="Facebook" /></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
