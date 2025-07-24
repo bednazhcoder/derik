@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buchung – Barbershop</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="js/main.js"></script>
+  <script defer src="js/booking.js"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Derik</div>
+
+      <!-- Theme Toggle -->
+      <button class="theme-toggle" id="themeToggle" aria-label="Farbschema wechseln">🌞</button>
+
+      <!-- Hamburger Menu -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Über Uns</a></li>
+        <li><a href="services.html">Dienstleistungen</a></li>
+        <li><a href="booking.html">Buchung</a></li>
+        <li><a href="gallery.html">Galerie</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div id="nav-overlay" class="nav-overlay"></div>
+
+  </header>
+
+  <!-- Booking Form -->
+  <section class="booking">
+    <div class="container">
+      <h1>Online Buchung</h1>
+      <form id="bookingForm">
+        <label for="name">Name*</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">E-Mail*</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="service">Dienstleistung*</label>
+        <select id="service" name="service" required>
+          <option value="">Bitte wählen...</option>
+          <option value="Haarschnitt">Haarschnitt</option>
+          <option value="Bartpflege">Bartpflege</option>
+          <option value="Rasur">Rasur</option>
+          <option value="Haarschnitt + Bart">Haarschnitt + Bart</option>
+        </select>
+
+        <label for="date">Datum*</label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="time">Uhrzeit*</label>
+        <input type="time" id="time" name="time" required />
+
+        <button type="submit">Jetzt Buchen</button>
+        <p class="confirmation-message" id="confirmationMessage"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Barbershop Max Mustermann</p>
+      <div class="socials">
+        <a href="#"><img src="images/instagram.svg" alt="Instagram" /></a>
+        <a href="#"><img src="images/facebook.svg" alt="Facebook" /></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
