@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="="de">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,12 +9,15 @@
 </head>
 <body>
 
-  <!-- Header & Navigation -->
+  <!-- Header -->
   <header>
     <nav class="navbar">
-      <div class="logo">Barbershop</div>
-      
-      <!-- Hamburger Icon -->
+      <div class="logo">Derik</div>
+
+      <!-- Theme Toggle -->
+      <button class="theme-toggle" id="themeToggle" aria-label="Farbschema wechseln">🌞</button>
+
+      <!-- Hamburger Menu -->
       <div class="hamburger" id="hamburger">
         <span></span>
         <span></span>
@@ -23,7 +26,7 @@
 
       <!-- Navigation Links -->
       <ul class="nav-links" id="navLinks">
-        <li><a href="index.html">Startseite</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="about.html">Über Uns</a></li>
         <li><a href="services.html">Dienstleistungen</a></li>
         <li><a href="booking.html">Buchung</a></li>
@@ -31,6 +34,8 @@
         <li><a href="contact.html">Kontakt</a></li>
       </ul>
     </nav>
+    <div id="nav-overlay" class="nav-overlay"></div>
+
   </header>
 
   <!-- Hero Section -->
@@ -68,7 +73,7 @@
   <!-- Footer -->
   <footer>
     <div class="footer-content">
-      <p>&copy; 2025 Barbershop Max Mustermann</p>
+      <p>&copy; 2025 Barbershop Derik</p>
       <div class="socials">
         <a href="#"><img src="images/instagram.svg" alt="Instagram" /></a>
         <a href="#"><img src="images/facebook.svg" alt="Facebook" /></a>
